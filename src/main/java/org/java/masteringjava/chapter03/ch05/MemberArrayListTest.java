@@ -1,7 +1,5 @@
-package org.java.masteringjava.ch05;
+package org.java.masteringjava.chapter03.ch05;
 
-import org.java.masteringjava.chapter03.ch05.Member;
-import org.java.masteringjava.chapter03.ch05.MemberArrayList;
 
 class MemberArrayListTest {
 
@@ -14,8 +12,15 @@ class MemberArrayListTest {
 		Member memberHong = new Member(1004, "홍길");
 
 		memberArrayList.addMember(memberLeee);
-		memberArrayList.add(memberKim);
-		memberArrayList.add(memberKang);
+		memberArrayList.addMember(memberKim);
+		memberArrayList.addMember(memberKang);
+
+		memberArrayList.showAllMembers();
+		memberArrayList.removeMember(memberKang.getMemberId());
+		memberArrayList.showAllMembers();
 	}
+
+
+
 
 }
